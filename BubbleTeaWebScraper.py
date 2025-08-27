@@ -1,0 +1,20 @@
+from bs4 import BeautifulSoup
+import requests 
+
+def scrapeTeaShops(): 
+    pageToScrape = requests.get("https://www.google.com/search?sa=X&sca_esv=ba24c2d2484ecd3d&tbm=lcl&sxsrf=AE3TifOBVBcsDZOoPSp6xTxbxqxHLireEw:1756331709703&q=bubble+tea+shops+in+central+london&rflfq=1&num=10&ved=2ahUKEwj6rai9_auPAxVtVUEAHav-AJoQjGp6BAgvEAE&biw=1197&bih=1190&dpr=0.8#rlfi=hd:;si:;mv:[[51.5400213,0.0467541],[51.507119100000004,-0.15539809999999998]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2", timeout =5) # Add link to scrape here
+    soup = BeautifulSoup(pageToScrape.text, "html.parser")
+    TeaShopNames = soup.find_all('span' , attrs = {'class':'OSrXXb'})
+    
+    for TeaShopName in TeaShopNames: 
+        print(TeaShopName.text)
+        
+def main() -> None: 
+    scrapeTeaShops()
+ 
+if __name__ == '__main__': 
+    main()
+
+
+
+    
