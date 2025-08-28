@@ -9,7 +9,7 @@ The aim of this project is to:
 - Create a small program that collects data which I could use for my SQL and python projects. 
 
 
-Attempt 1: 
+Attempt 1: (27/08/2025)
 Attempted to create an a webscraper using "Building a Web Scraping Tool in Python | Step-by-Step Tutorial" by Masterng Programming. 
 
 Was using this link as my target: 
@@ -27,3 +27,9 @@ Upon some research, I identified that most sites can potentially stop web scrapi
 Plan of action: 
 In my research I identified that a Google API could be used for web scraping which is a legal work around. 
 The API in question is places API. 
+
+
+(28/08/2025)
+After further Reading I discovered that the Google Places API costs money. 
+
+Time to find a free alternative. Or make one. 
