@@ -8,6 +8,7 @@ The aim of this project is to:
 - Improve my ability to code in python. 
 - Create a small program that collects data which I could use for my SQL and python projects. 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Attempt 1: (27/08/2025)
 Attempted to create an a webscraper using "Building a Web Scraping Tool in Python | Step-by-Step Tutorial" by Masterng Programming. 
@@ -27,9 +28,35 @@ Upon some research, I identified that most sites can potentially stop web scrapi
 Plan of action: 
 In my research I identified that a Google API could be used for web scraping which is a legal work around. 
 The API in question is places API. 
+I could potentially use this api moving forward. 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 (28/08/2025)
 After further Reading I discovered that the Google Places API costs money. 
 
 Time to find a free alternative. Or make one. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Attempt 2: (27/08/2025)
+
+Tried to use Selenium library which opens the browser dynamically and can extract elements once page has rendered. 
+
+Again, nothing was being posted on my terminal. 
+
+Decided to run the code provided by on the link "https://www.geeksforgeeks.org/python/python-web-scraping-tutorial/" and got results on the terminal! This meant a few things: 
+
+    The issue could most definitely be the website itself preventing my script from scraping. it is google after all.
+
+    Wrong target classes could be an issue - they can potentially change and in the case with one of my targets, it had a space which meant that it also probably was a changing/mutable class. 
+
+Plan of Action: 
+    FIND WORK ARROUNDS? 
+    Look for more suitable targets for my script to scrape. 
+
+I want to scrape websites with a lot of data so that I can get a bigger data set to manipulate for my projects but it migth be the case where i would need to use an official api to collect the data. 
+
+Through my research I saw someone use the yelp api to scrape their reviews for bubble tea shops. might have to do the same. but i really want this to work!
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
