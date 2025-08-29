@@ -8,7 +8,7 @@ The aim of this project is to:
 - Improve my ability to code in python. 
 - Create a small program that collects data which I could use for my SQL and python projects. 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
 Attempt 1: (27/08/2025)
 Attempted to create an a webscraper using "Building a Web Scraping Tool in Python | Step-by-Step Tutorial" by Masterng Programming. 
@@ -28,28 +28,32 @@ Upon some research, I identified that most sites can potentially stop web scrapi
 Plan of action: 
 In my research I identified that a Google API could be used for web scraping which is a legal work around. 
 The API in question is places API. 
-I could potentially use this api moving forward. 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
-(28/08/2025)
+(27/08/2025)
 After further Reading I discovered that the Google Places API costs money. 
 
 Time to find a free alternative. Or make one. 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Attempt 2: (28/08/2025)
 
-Attempt 2: (27/08/2025)
+After more digging, I noticed that there may be more issues than I previously speculated and there might be other solutions. 
 
-Tried to use Selenium library which opens the browser dynamically and can extract elements once page has rendered. 
+As some websites load their content differently i.e. using JavaScript, the data im trying to scrape may not be present in the HTML source code and the BeautifulSoup library im using may not suffice. 
+
+To resolve this, I'll be using the Selenium library. This library can better extract data on webpages. 
+
+Selenium library opens the browser dynamically and can extract elements once page has rendered. 
 
 Again, nothing was being posted on my terminal. 
 
 Decided to run the code provided by on the link "https://www.geeksforgeeks.org/python/python-web-scraping-tutorial/" and got results on the terminal! This meant a few things: 
 
-    The issue could most definitely be the website itself preventing my script from scraping. it is google after all.
+    - The issue could most definitely be the website itself preventing my script from scraping. it is google after all.
 
-    Wrong target classes could be an issue - they can potentially change and in the case with one of my targets, it had a space which meant that it also probably was a changing/mutable class. 
+    - Wrong target classes could be an issue - they can potentially change and in the case with one of my targets, it had a space which meant that it also probably was a changing/mutable class. 
 
 Plan of Action: 
     FIND WORK ARROUNDS? 
@@ -59,4 +63,17 @@ I want to scrape websites with a lot of data so that I can get a bigger data set
 
 Through my research I saw someone use the yelp api to scrape their reviews for bubble tea shops. might have to do the same. but i really want this to work!
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+(29/08/2025)
+
+Found this thread on stackoverflow confirming my suspicions: 
+
+https://stackoverflow.com/questions/58204313/selenium-log-in-with-url-failed
+
+The link on my script is opened on seleniums own version of chrome which itself is asking for a log in. 
+Assuming the link has a token for the website it should automatically open but as its opening on a foreign webrowser, it is asking for authentication. 
+
+Which leads me to the current issue i am experiencing now. 
+
+There must be a way arround. 

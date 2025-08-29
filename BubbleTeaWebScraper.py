@@ -39,7 +39,7 @@ def scrapeTeaShops():
 
     # initialise driver
     driver = webdriver.Chrome(service=service, options=options)
-    url = "https://www.google.com/search?sca_esv=465159d7bf2b0b64&tbm=lcl&sxsrf=AE3TifNap3yiVLX0363JcDFmzLil_tN2wg:1756406355848&q=bubble+tea+shops+london&rflfq=1&num=10&sa=X&ved=2ahUKEwijua_Hk66PAxWOXEEAHVpCPFYQjGp6BAgpEAE&biw=1197&bih=1170&dpr=0.8#rlfi=hd:;si:;mv:[[51.566008,0.12081130000000001],[51.457359999999994,-0.19341699999999998]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2"
+    url = "https://tinyurl.com/2uvcxye5" # Linked shortened using tinyurl
     driver.get(url)
     time.sleep(3)
     
